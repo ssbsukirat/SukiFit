@@ -1,0 +1,158 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+.alert-checkbox-label {
+    white-space: normal!important;
+}
+
+.auth-page {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.auth-form {
+    max-width: 50rem;
+}
+
+.auth-form__group {
+    padding: 0;
+    width: 100%;
+}
+
+.auth-form__image {
+    display: block;
+    margin: auto;
+}
+
+.auth-form__links {
+    margin-top: 3rem;
+    text-align: center;
+    a {
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+.auth-form__title {
+    text-align: center;
+}
+
+.fa-spinner {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+.form__message {
+    color: color($colors, danger);
+    padding: 1rem 0 0 1rem;
+}
+
+.loading {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Arial, sans-serif;
+    text-align: center;
+}
+
+.loading-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.no-elements {
+    align-items: center;
+    bottom: 0;
+    color: rgba(200, 200, 200, .9);
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.no-elements__icon {
+    font-size: 10rem;
+}
+
+.rewards-page__layer {
+    height: 100%;
+    width: 100%;
+    &::after {
+        align-items: center;
+        bottom: 0;
+        color: rgb(230, 230, 230);
+        content: '\f06b';
+        display: flex;
+        font-family: FontAwesome;
+        font-size: 25rem;
+        font-style: normal;
+        font-weight: normal;
+        justify-content: center;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.rewards-page__inner {
+    align-items: center;
+    bottom: 0;
+    color: color($colors, secondary);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 2;
+}
+
+textarea {
+    resize: none;
+}
+
+.upload-placeholder {
+    align-items: center;
+    background-color: rgb(220, 220, 220);
+    border-radius: 10rem;
+    display: flex;
+    flex-flow: column wrap;
+    height: 10rem;
+    justify-content: center;
+    width: 10rem;
+    ion-icon {
+        font-size: 3rem;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
